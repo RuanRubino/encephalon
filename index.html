@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0b0d" />
+    <meta name="color-scheme" content="dark" />
+    <title>Encephalon</title>
+    <meta name="description" content="A Encephalon cria ferramentas para o sistema nervoso das empresas. O primeiro produto é o Synapsis." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+
+    <header class="nav" id="topo">
+      <a class="wordmark" href="#topo" aria-label="Encephalon, início">
+        <span class="wordmark__pulse" aria-hidden="true"></span>encephalon
+      </a>
+      <nav class="nav__links" aria-label="Seções">
+        <a href="#manifesto">Manifesto</a>
+        <a href="#synapsis">Synapsis</a>
+        <a href="#principios">Princípios</a>
+        <a href="#galeria">Biologia</a>
+      </nav>
+      <a class="btn btn--ink btn--sm magnetic" href="#contato">Lista de espera</a>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <canvas class="hero__net" aria-hidden="true"></canvas>
+        <div class="hero__copy">
+          <p class="eyebrow reveal">Encephalon · laboratório de produtos</p>
+          <h1 id="hero-title" class="hero__title reveal">
+            Organizações também <em>pensam</em>. Nós desenhamos as conexões.
+          </h1>
+          <p class="hero__lead reveal">
+            Criamos ferramentas para o sistema nervoso das empresas: os caminhos por onde o trabalho passa de uma pessoa
+            para outra, de um departamento para outro, de uma empresa para outra.
+          </p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--ink magnetic" href="#synapsis">Conhecer o Synapsis</a>
+            <a class="link-arrow" href="#manifesto">Ler o manifesto <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="hero__hint reveal"><span class="hint-dot" aria-hidden="true"></span>Mova o cursor e clique: cada ponto é uma sinapse.</p>
+        </div>
+
+        <div class="hero__collage" data-parallax>
+          <figure class="piece piece--tree spin-slow" data-depth="1.2">
+            <img src="/midias/cerebro-ressonancia.webp" alt="Ressonância de um cérebro em corte axial, em violeta, azul e amarelo" width="484" height="569" />
+          </figure>
+          <figure class="piece piece--rings sway" style="--d: 7s; --r: -4deg" data-depth="0.9">
+            <img src="/midias/cabeca-aneis.webp" alt="Perfil de cabeça recortado em camadas coloridas concêntricas" width="633" height="688" />
+            <figcaption class="tag">fig. 01 — camadas</figcaption>
+          </figure>
+          <figure class="piece piece--dish sway" style="--d: 11s; --r: 5deg" data-depth="1.6">
+            <img src="/midias/cabeca-cores.webp" alt="Perfil de cabeça em cores chapadas vermelhas, amarelas e azuis" width="342" height="398" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- MARQUEE -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>sinapse</span><i>✳</i><span>axônio</span><i>✳</i><span><em>fluxo</em></span><i>✳</i><span>dendrito</span><i>✳</i><span>etapa</span><i>✳</i><span><em>aprovação</em></span><i>✳</i><span>memória</span><i>✳</i><span>conexão</span><i>✳</i>
+          <span>sinapse</span><i>✳</i><span>axônio</span><i>✳</i><span><em>fluxo</em></span><i>✳</i><span>dendrito</span><i>✳</i><span>etapa</span><i>✳</i><span><em>aprovação</em></span><i>✳</i><span>memória</span><i>✳</i><span>conexão</span><i>✳</i>
+        </div>
+      </div>
+
+      <!-- MANIFESTO -->
+      <section class="manifesto" id="manifesto" aria-labelledby="manifesto-title">
+        <div class="manifesto__side">
+          <p class="eyebrow" id="manifesto-title">Manifesto</p>
+          <figure class="manifesto__fig sway" style="--d: 10s; --r: -2.5deg">
+            <img src="/midias/fungo.webp" alt="Fungo amarelo que se espalha em rede a partir de um centro denso, sobre fundo preto" width="700" height="694" loading="lazy" />
+            <figcaption class="tag">fig. 03 — fungo</figcaption>
+          </figure>
+        </div>
+        <p class="manifesto__text" data-words>
+          Toda empresa já tem um cérebro. Ele está espalhado em planilhas, conversas, e-mails e na memória de quem está
+          lá há mais tempo. Quando alguém sai de férias, uma parte dele apaga. A Encephalon existe para tornar esse
+          cérebro visível: desenhar cada processo uma vez, deixar que todos o executem, e mostrar a qualquer momento
+          onde cada pedido está.
+        </p>
+      </section>
+
+      <!-- SYNAPSIS -->
+      <section class="synapsis" id="synapsis" aria-labelledby="synapsis-title">
+        <img class="synapsis__bg" src="/midias/cerebro-fibras.webp" alt="" aria-hidden="true" loading="lazy" />
+        <div class="synapsis__head">
+          <p class="eyebrow eyebrow--light">Primeiro produto</p>
+          <h2 id="synapsis-title" class="synapsis__title">Synapsis</h2>
+          <p class="synapsis__lead">
+            Fluxos de trabalho desenhados pelo chefe do departamento e executados por toda a equipe, mesmo quando o
+            processo atravessa outra empresa.
+          </p>
+          <ul class="features">
+            <li><strong>Desenhe arrastando.</strong> Cada etapa diz o que fazer e para qual departamento vai.</li>
+            <li><strong>Delegue e acompanhe.</strong> A etapa chega ao chefe, que a passa para a equipe. Todos veem onde ela está.</li>
+            <li><strong>Atravesse empresas.</strong> Quando o fluxo envolve um parceiro, cada versão passa pela aprovação dele.</li>
+          </ul>
+        </div>
+
+        <div class="demo" aria-label="Demonstração interativa de uma execução no Synapsis">
+          <div class="demo__bar">
+            <span class="demo__code">#128</span>
+            <span class="demo__name">Compra de equipamento</span>
+            <span class="demo__status" data-status>Em andamento</span>
+          </div>
+          <div class="demo__canvas">
+            <svg class="demo__wires" viewBox="0 0 640 220" preserveAspectRatio="none" aria-hidden="true"></svg>
+            <div class="demo__nodes"></div>
+            <span class="demo__pulse" aria-hidden="true"></span>
+          </div>
+          <div class="demo__panel" aria-live="polite">
+            <div class="demo__info"></div>
+            <div class="demo__actions">
+              <button class="btn btn--green" type="button" data-advance>Concluir etapa</button>
+              <button class="btn btn--ghost-light" type="button" data-reset>Reiniciar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRINCÍPIOS -->
+      <section class="principles" id="principios" aria-labelledby="principios-title">
+        <div class="section-head">
+          <p class="eyebrow">Princípios</p>
+          <h2 id="principios-title" class="section-title">O que a biologia já resolveu, a gente copia.</h2>
+        </div>
+        <div class="cards">
+          <article class="card tilt reveal">
+            <div class="card__img"><img src="/midias/processo1.webp" alt="" loading="lazy" width="620" height="619" /></div>
+            <h3>Estrutura antes de esforço</h3>
+            <p>Um processo bem desenhado poupa mais tempo do que qualquer pressa. O desenho vem primeiro, a execução fica leve.</p>
+          </article>
+          <article class="card tilt reveal">
+            <div class="card__img"><img src="/midias/processo2.webp" alt="" loading="lazy" width="620" height="623" /></div>
+            <h3>Crescer em anéis</h3>
+            <p>Cada versão de um processo guarda a anterior, como uma colônia que cresce em anéis. Nada se perde, tudo fica registrado.</p>
+          </article>
+          <article class="card tilt reveal">
+            <div class="card__img"><img src="/midias/processo5.webp" alt="" loading="lazy" width="700" height="698" /></div>
+            <h3>Ramificar sem perder o centro</h3>
+            <p>O trabalho se espalha por departamentos e empresas, como tinta na água, mas continua ligado a quem o começou.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- BIOLOGIA -->
+      <section class="gallery" id="galeria" aria-labelledby="galeria-title">
+        <div class="section-head">
+          <p class="eyebrow">Biologia</p>
+          <h2 id="galeria-title" class="section-title">Da biologia ao processo.</h2>
+          <p class="section-lead">Lagarta, crisálida, borboleta: o mesmo organismo em três etapas, cada uma preparando a seguinte. Um bom processo funciona assim.</p>
+        </div>
+        <ol class="stages">
+          <li class="stage reveal">
+            <figure class="stage__fig sway" style="--d: 9s; --r: 1deg">
+              <img src="/midias/biology-1.webp" alt="Lagarta verde com listras brancas e roxas apoiada num galho, sobre fundo preto" loading="lazy" width="1100" height="968" style="object-position: 45% 50%" />
+            </figure>
+            <p class="stage__n">01</p>
+            <h3 class="stage__t">Lagarta</h3>
+            <p class="stage__d">O pedido nasce e começa a ganhar forma.</p>
+          </li>
+          <li class="stage reveal">
+            <figure class="stage__fig sway" style="--d: 10.5s; --r: -1deg">
+              <img src="/midias/biology-2.webp" alt="Crisálida prateada pendurada num galho, sobre fundo escuro" loading="lazy" width="746" height="1100" style="object-position: 70% 45%" />
+            </figure>
+            <p class="stage__n">02</p>
+            <h3 class="stage__t">Crisálida</h3>
+            <p class="stage__d">Cada departamento faz a sua parte, em silêncio e na ordem certa.</p>
+          </li>
+          <li class="stage reveal">
+            <figure class="stage__fig sway" style="--d: 8.5s; --r: 1.2deg">
+              <img src="/midias/biology-3.webp" alt="Borboleta de asas fechadas, marrom com faixa laranja, sobre fundo preto" loading="lazy" width="1100" height="733" style="object-position: 40% 50%" />
+            </figure>
+            <p class="stage__n">03</p>
+            <h3 class="stage__t">Borboleta</h3>
+            <p class="stage__d">O resultado sai pronto, e o caminho inteiro fica registrado.</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta" id="contato" aria-labelledby="cta-title">
+        <h2 id="cta-title" class="cta__title">Quer ver o Synapsis <em>antes</em> de todo mundo?</h2>
+        <p class="cta__lead">Deixe seu e-mail. Avisamos quando a primeira versão abrir para testes.</p>
+        <form class="cta__form" novalidate>
+          <label class="sr-only" for="email">Seu e-mail</label>
+          <input id="email" name="email" type="email" placeholder="voce@empresa.com.br" autocomplete="email" required />
+          <button class="btn btn--ink magnetic" type="submit">Entrar na lista</button>
+        </form>
+        <p class="cta__msg" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__mark" aria-hidden="true">encephalon</p>
+      <div class="footer__row">
+        <p>© 2026 Encephalon. Synapsis é um produto Encephalon.</p>
+        <a href="#topo" class="link-arrow">Voltar ao topo <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
